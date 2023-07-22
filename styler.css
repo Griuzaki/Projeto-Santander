@@ -1,0 +1,416 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.caixa {
+    padding: 25px;
+    letter-spacing: -0.02em;
+}
+
+.logo {
+    width: 200px;
+    /* largura */
+
+}
+
+.link-voce {
+    color: crimson;
+    /* troca a cor do texto */
+    margin-left: 30px;
+    /* margem do lado esquerdo */
+    font-size: 20px;
+    /*grossura da fonte */
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.link-voce:hover {
+    text-decoration: underline;
+
+}
+
+
+.link-empresa {
+    color: black;
+    margin-left: 30px;
+    /* tamanho da fonte */
+    font-size: 20px;
+    /* tamanhfont-weight: 800;o da fonte */
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.link-empresa:hover {
+    text-decoration: underline;
+}
+
+.search-you {
+    position: relative;
+    bottom: 5px;
+    border: 0px solid#d3d3d3;
+    margin-left: 30px;
+    font-weight: 750;
+    font-size: 14px;
+    font-family: sans-serif;
+    outline: none;
+
+}
+
+.lupa {
+    position: relative;
+    right: 50px;
+    height: 25px;
+    width: 25px;
+}
+
+.access-session {
+    text-align: end;
+
+}
+
+.access {
+    position: absolute;
+    right: 270px;
+    bottom: 91%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.access:hover {
+    font-size: 16px;
+    color: red;
+}
+
+.natural-person {
+    position: absolute;
+    right: 170px;
+    bottom: 91%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.natural-person:hover {
+    font-size: 16px;
+    color: red;
+}
+
+
+.legal-entity {
+    position: absolute;
+    right: 55px;
+    bottom: 91%;
+    color: red;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.legal-entity:not(:hover) {
+    text-decoration: underline;
+}
+
+
+.data-bank {
+    height: 20px;
+    width: 150px;
+    padding: 5px;
+    border: 1px solid#d3d3d3;
+    margin-left: 20%;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.red-arrow {
+    width: 25px;
+    height: 25px;
+}
+
+
+.background {
+    width: 100%;
+}
+
+
+h3 {
+    margin-left: 50px;
+    margin-top: 60px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    text-decoration: overline;
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+li {
+    height: 170px;
+    /* altura do elemento */
+    width: 170px;
+    /* a largura do elemnto */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 30px;
+    display: inline-block;
+}
+
+.open-li {
+    height: 150px;
+    /* altura do elemento */
+    width: 150px;
+    /* a largura do elemnto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
+.open-li:hover {
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 0px 5px 4px;
+    transform: scale(1.1);
+    filter: drop-shadow(10px 5px 40px rgb(85, 96, 110));
+}
+
+
+.product-img {
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .access {
+        top: 3.4em
+    }
+
+    .natural-person {
+        top: 3.4em
+    }
+
+
+    .legal-entity {
+        top: 3.4em;
+    }
+
+
+    ul {
+        display: -ms-inline-flexbox;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .access {
+        top: 3.5em;
+        right: 200px;
+        font-size: 12px;
+    }
+
+    .access:hover {
+        font-size: 13px;
+        color: red;
+    }
+
+    .natural-person {
+        top: 3.5em;
+        right: 120px;
+        font-size: 12px;
+    }
+    .natural-person:hover {
+        font-size: 13px;
+        color: red;
+    }
+
+    .legal-entity {
+        top: 3.5em;
+        right: 30px;
+        font-size: 12px;
+    }
+
+
+    .data-bank {
+        width: 120px;
+    }
+
+    .red-arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    ul {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .logo {
+        width: 95%;
+        position: relative;
+        bottom: 22px;
+    }
+
+    .link-voce {
+        font-size: 17px;
+        position: relative;
+        bottom: 20px;
+        margin-left: auto;
+    }
+
+    .link-empresa {
+        position: relative;
+        bottom: 20px;
+    }
+
+
+    .search-you {
+        top: 35px;
+        margin-left: auto;
+    }
+
+    .lupa {
+        top: 35px;
+    }
+
+    .access {
+        font-family: 'Georgia', serif;
+        top: 125px;
+        font-size: 15px;
+        right: 218px;
+    }
+
+    .natural-person {
+        font-family: 'Georgia', serif;
+        top: 125px;
+        font-size: 15px;
+        right: 125px;
+    }
+
+    .legal-entity {
+        font-family: 'Georgia', serif;
+        top: 125px;
+        font-size: 15px;
+        right: 20px;
+    }
+
+    .background {
+        height: 11em;
+        width: 26rem;
+    }
+
+    h3 {
+        margin: 40px auto 0 auto;
+        font-size: 35px;
+        text-align: center;
+    }
+
+
+    ul {
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        font-weight: 500;
+        margin-top: 25px;
+    }
+
+    .open-li {
+        display: inline-grid;
+        padding-top: 2px;
+        height: 7em;
+        width: 7rem;
+        margin: 30px;  
+      }
+
+    p {
+        font-size: 17px;
+        margin-top: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+@media screen and (max-width: 430px) {
+
+    .logo {
+        width: 70%;
+        height: 44px;
+        position: relative;
+        bottom: 20px;
+        margin-left: 50px;
+    }
+
+
+    .search-you {
+        top: 60px;
+        right: 45px;
+    }
+
+    .lupa {
+        right: 80px;
+        top: 60px;
+    }
+
+    .natural-person {
+        position: sticky;
+        margin-left: 150px;
+    }
+
+    .legal-entity {
+        position: static;
+        margin-right: 20px;
+    }
+
+    .data-bank {
+        position: relative;
+        left: 110px;
+    }
+
+    .red-arrow {
+        position: relative;
+        left: 110px;
+    }
+
+}
